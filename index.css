@@ -5,6 +5,40 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --achtergrondkleur-en-navigatieHover-lightmode: hsl(141, 36%, 28%);
+  --accentkleur-lightmode: hsl(140, 37%, 28%);
+  --link-achtergrondkleur-lightmode: hsl(120, 56%, 81%);
+  --hover: hsl(44, 98%, 50%);
+  --achtergrondkleur-darkmode: hsl(137, 37%, 69%);
+  --accentkleur-darkmode:	hsl(137, 54%, 81%);
+  --link-achtergrondkleur-darkmode:	hsl(145, 71%, 40%);
+  --zwarte-tekst: hsl(0, 0%, 0%);
+  --witte-tekst: hsl(0, 0%, 100%);
+  --leesMeerLinkRadius: 0.25rem;
+}
+
+body {
+  margin: 1rem;
+  place-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Stack Sans Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p, a, li {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 @layer generiek {
 
   html, body {
@@ -59,4 +93,182 @@
     }
   }
 
+}
+
+.color1 {
+  background-color: var(--achtergrondkleur-en-navigatieHover-lightmode);
+  color: var(--witte-tekst);
+  font-weight: bold;
+}
+
+.color2 {
+  background-color: var(--accentkleur-lightmode);
+  color: var(--witte-tekst);
+  font-weight: bold;
+}
+
+.color3 {
+  background-color: var(--link-achtergrondkleur-lightmode);
+  color: var(--zwarte-tekst);
+  font-weight: bold;
+}
+
+.color4 {
+  background-color: var(--hover);
+  color: var(--zwarte-tekst);
+  font-weight: bold;
+}
+
+.color5 {
+  background-color: var(--achtergrondkleur-darkmode);
+  color: var(--zwarte-tekst);
+  font-weight: bold;
+}
+
+.color6 {
+  background-color: var(--accentkleur-darkmode);
+  color: var(--zwarte-tekst);
+  font-weight: bold;
+}
+
+.color7 {
+  background-color: var(--link-achtergrondkleur-darkmode);
+  color: var(--zwarte-tekst);
+  font-weight: bold;
+}
+
+.color8 {
+  background-color: var(--witte-tekst);
+  color: var(--zwarte-tekst);
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.color9 {
+  background-color: var(--zwarte-tekst);
+  color: var(--witte-tekst);
+  font-weight: bold;
+}
+
+.kleurnaam {
+  font-weight: bold;
+}
+
+.kleurinfo {
+  color: hsl(0, 0%, 34.79%);
+}
+
+.kopjes {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.kop1 {
+  font-size: 3rem;
+}
+
+.kop2 {
+  font-size: 2.25rem;
+}
+
+.kop3 {
+  font-size: 1.75rem;
+}
+
+.kop4 {
+  font-size: 1.375rem;
+}
+
+.kop5 {
+  font-size: 1.125rem;
+}
+
+.kop6 {
+  font-size: 1rem;
+}
+
+.kopa {
+  font-size: 2.5rem;
+}
+
+.kopb {
+  font-size: 1.875rem;
+}
+
+.kopc {
+  font-size: 1.5rem;
+}
+
+.kopd {
+  font-size: 1.25rem;
+}
+
+.kope {
+  font-size: 1.063rem;
+}
+
+.kopf {
+  font-size: 0.938rem;
+}
+
+.kopl {
+  font-size: 2rem;
+}
+
+.kopm {
+  font-size: 1.625rem;
+}
+
+.kopn {
+  font-size: 1.375rem;
+}
+
+.kopo {
+  font-size: 1.125rem;
+}
+
+.kopp {
+  font-size: 1rem;
+}
+
+.kopq {
+  font-size: 0.875rem;
+}
+
+.laptop-tekst {
+  font-size: 1.125rem;
+}
+
+.tablet-tekst,
+.mobiel-tekst {
+  font-size: 1rem;
+}
+
+.content {
+  line-height: 1.4;
+}
+
+.link-lightmode {
+  background-color: var(--link-achtergrondkleur-lightmode);
+  color: var(--zwarte-tekst);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--leesMeerLinkRadius);
+  text-decoration: none;
+}
+
+.link-lightmode:hover {
+  background-color: var(--hover);
+}
+
+.link-darkmode {
+  background-color: var(--link-achtergrondkleur-darkmode);
+  color: var(--zwarte-tekst);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--leesMeerLinkRadius);
+  text-decoration: none;
+}
+
+.link-darkmode:hover {
+  background-color: var(--hover);
 }
