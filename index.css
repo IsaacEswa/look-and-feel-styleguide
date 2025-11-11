@@ -249,7 +249,7 @@ p, a, li {
   line-height: 1.4;
 }
 
-.link-lightmode {
+.leesmeer-lightmode {
   background-color: var(--link-achtergrondkleur-lightmode);
   color: var(--zwarte-tekst);
   padding: 0.25rem 0.5rem;
@@ -257,11 +257,11 @@ p, a, li {
   text-decoration: none;
 }
 
-.link-lightmode:hover {
+.leesmeer-lightmode:hover {
   background-color: var(--hover);
 }
 
-.link-darkmode {
+.leesmeer-darkmode {
   background-color: var(--link-achtergrondkleur-darkmode);
   color: var(--zwarte-tekst);
   padding: 0.25rem 0.5rem;
@@ -269,6 +269,6 @@ p, a, li {
   text-decoration: none;
 }
 
-.link-darkmode:hover {
+.leesmeer-darkmode:hover {
   background-color: var(--hover);
 }
