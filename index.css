@@ -20,6 +20,7 @@
   --zwarte-tekst: hsl(0, 0%, 0%);
   --witte-tekst: hsl(0, 0%, 100%);
   --leesMeerLinkRadius: 0.25rem;
+  --tweede-achtergrondkleur: hsl(40, 100%, 80%);
 }
 
 body {
@@ -147,6 +148,12 @@ p, a, li {
 .color9 {
   background-color: var(--zwarte-tekst);
   color: var(--witte-tekst);
+  font-weight: bold;
+}
+
+.color10 {
+  background: var(--tweede-achtergrondkleur);
+  color: var(--zwarte-tekst);
   font-weight: bold;
 }
 
