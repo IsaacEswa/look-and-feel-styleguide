@@ -13,13 +13,13 @@
 
     :root {
         /* kleuren */
-        --achtergrondkleur-en-navigatieHover-lightmode: hsl(141, 36%, 28%);
+        --background-hover-lightmode: hsl(141, 36%, 28%);
         --accentkleur-lightmode: hsl(140, 37%, 28%);
-        --link-achtergrondkleur-lightmode: hsl(120, 56%, 81%);
+        --links-background-lightmode: hsl(120, 56%, 81%);
         --hover: hsl(44, 98%, 50%);
-        --achtergrondkleur-darkmode: hsl(137, 37%, 69%);
+        --background-darkmode: hsl(137, 37%, 69%);
         --accentkleur-darkmode:	hsl(137, 54%, 81%);
-        --link-achtergrondkleur-darkmode:	hsl(145, 71%, 40%);
+        --links-background-darkmode:	hsl(145, 71%, 40%);
         --zwarte-tekst: hsl(0, 0%, 0%);
         --witte-tekst: hsl(0, 0%, 100%);
 
@@ -128,7 +128,7 @@
 
     /* "lees meer" linkjes style */
     .leesmeer-lightmode {
-        background-color: var(--link-achtergrondkleur-lightmode);
+        background-color: var(--links-background-lightmode);
         color: var(--zwarte-tekst);
         padding: 0.25rem 0.5rem;
         border-radius: var(--leesMeerLinkRadius);
@@ -140,7 +140,7 @@
     }
 
     .leesmeer-darkmode {
-        background-color: var(--link-achtergrondkleur-darkmode);
+        background-color: var(--links-background-darkmode);
         color: var(--zwarte-tekst);
         padding: 0.25rem 0.5rem;
         border-radius: var(--leesMeerLinkRadius);
