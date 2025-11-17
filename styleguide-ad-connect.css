@@ -11,6 +11,16 @@
         scroll-behavior: smooth;
     }
 
+    @font-face {
+        font-family: "Stack Sans Headline";
+        src: url('./fonts/StackSansHeadline-VariableFont_wght.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url('./fonts/DMSans-VariableFont_wght.ttf') format('truetype');
+    }
+
     :root {
         /* kleuren */
         --achtergrondkleur-en-navigatieHover-lightmode: hsl(141, 36%, 28%);
@@ -18,8 +28,8 @@
         --link-achtergrondkleur-lightmode: hsl(120, 56%, 81%);
         --hover: hsl(44, 98%, 50%);
         --achtergrondkleur-darkmode: hsl(137, 37%, 69%);
-        --accentkleur-darkmode:	hsl(137, 54%, 81%);
-        --link-achtergrondkleur-darkmode:	hsl(145, 71%, 40%);
+        --accentkleur-darkmode: hsl(137, 54%, 81%);
+        --link-achtergrondkleur-darkmode: hsl(145, 71%, 40%);
         --zwarte-tekst: hsl(0, 0%, 0%);
         --witte-tekst: hsl(0, 0%, 100%);
 
@@ -30,17 +40,25 @@
     }
 
     /* Typografie */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: "Stack Sans Headline", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
     }
 
-    p, a, li {
+    p,
+    a,
+    li {
         font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
         font-size: 1rem;
+
         /* laptop */
         @media screen and (min-width: 1024px) {
             font-size: 1.125rem;
@@ -50,6 +68,7 @@
     /* verander de waarde van de mediaquery's voor je eigen website indien nodig */
     h1 {
         font-size: 2rem;
+
         /* tablet */
         @media screen and (min-width: 768px) {
             font-size: 2.5rem;
@@ -63,6 +82,7 @@
 
     h2 {
         font-size: 1.625rem;
+
         /* tablet */
         @media screen and (min-width: 768px) {
             font-size: 1.875rem;
@@ -76,6 +96,7 @@
 
     h3 {
         font-size: 1.375rem;
+
         /* tablet */
         @media screen and (min-width: 768px) {
             font-size: 1.5rem;
@@ -89,6 +110,7 @@
 
     h4 {
         font-size: 1.125rem;
+
         /* tablet */
         @media screen and (min-width: 768px) {
             font-size: 1.25rem;
@@ -102,6 +124,7 @@
 
     h5 {
         font-size: 1rem;
+
         /* tablet */
         @media screen and (min-width: 768px) {
             font-size: 1.063rem;
@@ -115,6 +138,7 @@
 
     h6 {
         font-size: 0.875rem;
+
         /* tablet */
         @media screen and (min-width: 768px) {
             font-size: 0.938rem;
@@ -151,5 +175,5 @@
         background-color: var(--hover);
     }
 
-        /* Formulier elementen */
+    /* Formulier elementen */
 }
