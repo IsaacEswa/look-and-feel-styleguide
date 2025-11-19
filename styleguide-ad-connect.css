@@ -134,3 +134,13 @@ textarea {
   resize: none;
   margin-bottom: 15px;
 }
+
+.verzend{
+  background: var(--accentkleur-lightmode);
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
