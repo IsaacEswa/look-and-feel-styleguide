@@ -279,3 +279,17 @@ p, a, li {
 .leesmeer-darkmode:hover {
   background-color: var(--hover);
 }
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+  margin-bottom: 15px;
+}

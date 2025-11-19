@@ -205,98 +205,15 @@
     <h2>Formulier elementen</h2>
     <p>Bij het onderdeel formulier elementen worden input, radio, checkbox en buttons gedemonstreerd.</p>
 
-    <form class="">
-
-      <p>
-        <label class="">
-          Text:
-          <input type="text" class="">
-        </label>
-      </p>
-
-      <p>
-        <label class="">
-          Textarea:
-          <textarea class=""></textarea>
-        </label>
-      </p>
-
-      <fieldset>
-        <legend class="">Radio options:</legend>
-
-        <label class="">
-          <input type="radio" name="radio-options" value="option 1" checked class="">
-          Option 1
-        </label>
-
-        <label class="">
-          <input type="radio" name="radio-options" value="option 2" class="">
-          Option 2
-        </label>
-
-        <label class="">
-          <input type="radio" name="radio-options" value="option 3" class="">
-          Option 3
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend class="">Checkbox</legend>
-
-        <label class="">
-          <input type="checkbox" name="checkbox-1" checked class="">
-          Checkbox 1
-        </label>
-
-        <label class="">
-          <input type="checkbox" name="checkbox-2" class="">
-          Checkbox 2
-        </label>
-
-        <label class="">
-          <input type="checkbox" name="chekcbox-3" class="">
-          Checkbox 3
-        </label>
-      </fieldset>
-
-      <p>
-        <label class="">
-          Search:
-          <input type="search" class="">
-        </label>
-      </p>
-
-      <p>
-        <label class="">
-          Tel:
-          <input type="tel" class="">
-        </label>
-      </p>
-
-      <p>
-        <label class="">
-          Range:
-          <input type="range" class="">
-        </label>
-      </p>
-
-      <p>
-        <input type="submit" value="Submit button" class="">
-      </p>
-
-      <p>
-        <button type="button" class="">Button</button>
-      </p>
-    </form>
-
-  </section>
-
-
-  <!-- En eventueel meer categorieën en componenten -->
-  <section id="buttons">
-    <h2>Buttons</h2>
-    <a href="" class="leesmeer-lightmode">Lees meer</a>
-    <a href="" class="leesmeer-darkmode">Lees meer</a>
+   <div class="inputs">
+    <form class="contact-form">
+  <div class="row">
+    <input type="text" placeholder="Naam" required>
+    <input type="email" placeholder="E-mailadres" required>
+  </div>
+  <textarea placeholder="Bericht" required></textarea>
+  <button class="verzend" type="submit">Bericht verzenden</button>
+</form>
   </section>
 
 </body>
