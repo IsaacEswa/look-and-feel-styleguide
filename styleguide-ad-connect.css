@@ -11,24 +11,33 @@
         scroll-behavior: smooth;
     }
 
-    html {
+    @font-face {
+        font-family: "Stack Sans Headline";
+        src: url('./fonts/StackSansHeadline-VariableFont_wght.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: "DM Sans";
+        src: url('./fonts/DMSans-VariableFont_wght.ttf') format('truetype');
+    }
+
+    :root {
         /* kleuren */
-        --achtergrondkleur-en-navigatieHover-lightmode: hsl(141, 36%, 28%);
+        --background-hover-lightmode: hsl(141, 36%, 28%);
         --accentkleur-lightmode: hsl(140, 37%, 28%);
-        --link-achtergrondkleur-lightmode: hsl(120, 56%, 81%);
+        --links-background-lightmode: hsl(120, 56%, 81%);
         --hover: hsl(44, 98%, 50%);
+<<<<<<< HEAD
         --achtergrondkleur-darkmode: hsl(137, 37%, 69%);
+        --accentkleur-darkmode: hsl(137, 54%, 81%);
+        --link-achtergrondkleur-darkmode: hsl(145, 71%, 40%);
+=======
+        --background-darkmode: hsl(137, 37%, 69%);
         --accentkleur-darkmode:	hsl(137, 54%, 81%);
-        --link-achtergrondkleur-darkmode:	hsl(145, 71%, 40%);
+        --links-background-darkmode:	hsl(145, 71%, 40%);
+>>>>>>> fea4ccc1c789aa4b2c93253208349e395a19b22f
         --zwarte-tekst: hsl(0, 0%, 0%);
         --witte-tekst: hsl(0, 0%, 100%);
-        --xxl-font: 2em;
-        --xl-font: 1.7em;
-
-        @media (min-width: 30em) {
-            --xxl-font: 2.5em;
-            --xl-font: 2em;
-        }
 
     }
 
@@ -37,105 +46,56 @@
     }
 
     /* Typografie */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: "Stack Sans Headline", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
     }
 
-    p, a, li {
+    p,
+    a,
+    li {
         font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        font-size: 1rem;
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 1.125rem;
-        }
+        font-size: clamp(1rem, 0.8rem + 1vw, 1.125rem);
     }
 
-    /* verander de waarde van de mediaquery's voor je eigen website indien nodig */
-    h1 {
-        font-size: 2rem;
-        /* tablet */
-        @media screen and (min-width: 768px) {
-            font-size: 2.5rem;
-        }
 
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 3rem;
-        }
+    /* Responsive font sizes */
+    h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
     }
 
     h2 {
-        font-size: 1.625rem;
-        /* tablet */
-        @media screen and (min-width: 768px) {
-            font-size: 1.875rem;
-        }
-
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 2.25rem;
-        }
+        font-size: clamp(1.625rem, 4vw, 2.25rem);
     }
 
     h3 {
-        font-size: 1.375rem;
-        /* tablet */
-        @media screen and (min-width: 768px) {
-            font-size: 1.5rem;
-        }
-
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 1.75rem;
-        }
+        font-size: clamp(1.375rem, 3vw, 1.75rem);
     }
 
     h4 {
-        font-size: 1.125rem;
-        /* tablet */
-        @media screen and (min-width: 768px) {
-            font-size: 1.25rem;
-        }
-
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 1.375rem;
-        }
+        font-size: clamp(1.125rem, 2.5vw, 1.375rem);
     }
 
     h5 {
-        font-size: 1rem;
-        /* tablet */
-        @media screen and (min-width: 768px) {
-            font-size: 1.063rem;
-        }
-
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 1.125rem;
-        }
+        font-size: clamp(1rem, 1.5vw, 1.125rem);
     }
 
     h6 {
-        font-size: 0.875rem;
-        /* tablet */
-        @media screen and (min-width: 768px) {
-            font-size: 0.938rem;
-        }
-
-        /* laptop */
-        @media screen and (min-width: 1024px) {
-            font-size: 1rem;
-        }
+        font-size: clamp(0.875rem, 1vw, 1rem);
     }
 
-    /* "lees meer" linkjes style */
+
+    /* "lees meer" buttons style */
     .leesmeer-lightmode {
-        background-color: var(--link-achtergrondkleur-lightmode);
+        background-color: var(--links-background-lightmode);
         color: var(--zwarte-tekst);
         padding: 0.25rem 0.5rem;
         border-radius: var(--leesMeerLinkRadius);
@@ -147,7 +107,7 @@
     }
 
     .leesmeer-darkmode {
-        background-color: var(--link-achtergrondkleur-darkmode);
+        background-color: var(--links-background-darkmode);
         color: var(--zwarte-tekst);
         padding: 0.25rem 0.5rem;
         border-radius: var(--leesMeerLinkRadius);
@@ -158,5 +118,29 @@
         background-color: var(--hover);
     }
 
-        /* Formulier elementen */
+    /* Formulier elementen */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.verzend{
+  background: var(--accentkleur-lightmode);
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
 }
