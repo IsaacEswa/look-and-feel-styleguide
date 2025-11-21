@@ -27,15 +27,9 @@
         --accentkleur-lightmode: hsl(140, 37%, 28%);
         --links-background-lightmode: hsl(120, 56%, 81%);
         --hover: hsl(44, 98%, 50%);
-<<<<<<< HEAD
-        --achtergrondkleur-darkmode: hsl(137, 37%, 69%);
-        --accentkleur-darkmode: hsl(137, 54%, 81%);
-        --link-achtergrondkleur-darkmode: hsl(145, 71%, 40%);
-=======
         --background-darkmode: hsl(137, 37%, 69%);
         --accentkleur-darkmode:	hsl(137, 54%, 81%);
         --links-background-darkmode:	hsl(145, 71%, 40%);
->>>>>>> fea4ccc1c789aa4b2c93253208349e395a19b22f
         --zwarte-tekst: hsl(0, 0%, 0%);
         --witte-tekst: hsl(0, 0%, 100%);
 
