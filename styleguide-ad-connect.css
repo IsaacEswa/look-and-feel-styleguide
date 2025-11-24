@@ -23,15 +23,16 @@
 
     :root {
         /* kleuren */
-        --background-hover-lightmode: hsl(141, 36%, 28%);
-        --accentkleur-lightmode: hsl(140, 37%, 28%);
-        --links-background-lightmode: hsl(120, 56%, 81%);
-        --hover: hsl(44, 98%, 50%);
-        --background-darkmode: hsl(137, 37%, 69%);
-        --accentkleur-darkmode:	hsl(137, 54%, 81%);
-        --links-background-darkmode:	hsl(145, 71%, 40%);
-        --zwarte-tekst: hsl(0, 0%, 0%);
-        --witte-tekst: hsl(0, 0%, 100%);
+        --primary-color-dark: hsl(141, 36%, 28%);
+        --primary-color-light: hsl(120, 56%, 81%);
+        --primary-color-lightest:hsl(137, 54%, 81%);
+        --secondary-color-lightmode: hsl(44, 98%, 50%);
+        --secondary-color-darkmode: hsl(42, 100%, 30%, .5);
+        --input-color: hsl(0, 0%, 80%);
+        --lightmode-text: hsl(0, 0%, 0%);
+        --darkmode-text: hsl(0, 0%, 100%);
+        /* radius */
+        --lees-meer-link-radius: 0.25rem;
 
     }
 
@@ -89,62 +90,53 @@
 
     /* "lees meer" buttons style */
     .leesmeer-lightmode {
-        background-color: var(--links-background-lightmode);
-        color: var(--zwarte-tekst);
+        background-color: var(--primary-color-light);
+        color: var(--lightmode-text);
         padding: 0.25rem 0.5rem;
-        border-radius: var(--leesMeerLinkRadius);
+        border-radius: var(--lees-meer-link-radius);
         text-decoration: none;
-    }
-
-    .leesmeer-lightmode:hover {
-        background-color: var(--hover);
     }
 
     .leesmeer-darkmode {
-        background-color: var(--links-background-darkmode);
-        color: var(--zwarte-tekst);
+        background-color: var(--primary-color-light);
+        color: var(--lightmode-text);
         padding: 0.25rem 0.5rem;
-        border-radius: var(--leesMeerLinkRadius);
+        border-radius: var(--lees-meer-link-radius);
         text-decoration: none;
-    }
-
-    .leesmeer-darkmode:hover {
-        background-color: var(--hover);
     }
 
     /* Formulier elementen */
 }
 
-input, textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #ccc;
-  outline: none;
-  border-radius: 12px;
-  font-size: 16px;
-}
+    input, textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid var(--input-color);
+        outline: none;
+        border-radius: 12px;
+        font-size: 16px;
+    }
 
-textarea {
-  height: 200px;
-  resize: none;
-  margin-bottom: 15px;
+    textarea {
+        height: 200px;
+        resize: none;
+        margin-bottom: 15px;
+    }
 
-}
+    input:focus {
+        border: 2px solid hsl(40, 100%, 80%);
+    }
 
-input:focus {
-  border: 2px solid hsl(40, 100%, 80%);
-}
+    textarea:focus {
+        border: 2px solid hsl(40, 100%, 80%);
+    }
 
-textarea:focus {
-  border: 2px solid hsl(40, 100%, 80%);
-}
-
-.verzend{
-  background: var(--accentkleur-lightmode);
-  color: white;
-  padding: 15px 40px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
+    .verzend{
+        background: var(--primary-color-dark);
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
