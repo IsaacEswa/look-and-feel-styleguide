@@ -24,15 +24,15 @@
     :root {
         /* kleuren */
         --primary-color-dark: hsl(141, 36%, 28%);
-        --primary-color-light: hsl(120, 56%, 81%);
-        --primary-color-lightest: hsl(137, 54%, 81%);
+        --primary-color-lightest: hsl(120, 56%, 81%);
+        --primary-color-light: hsl(137, 54%, 81%);
         --secondary-color-lightmode: hsl(44, 98%, 50%);
         --secondary-color-darkmode: hsl(42, 100%, 30%, .5);
         --input-color: hsl(0, 0%, 80%);
         --lightmode-text: hsl(0, 0%, 0%);
         --darkmode-text: hsl(0, 0%, 100%);
         /* radius */
-        --lees-meer-link-radius: 0.25rem;
+        --button-radius: 0.25rem;
 
     }
 
@@ -90,7 +90,7 @@
 
 
     /* "lees meer" buttons style */
-    .leesmeer-lightmode {
+    .button-lightmode {
         background-color: var(--primary-color-light);
         color: var(--lightmode-text);
         padding: 0.25rem 0.5rem;
@@ -98,7 +98,7 @@
         text-decoration: none;
     }
 
-    .leesmeer-darkmode {
+    .button-darkmode {
         background-color: var(--primary-color-light);
         color: var(--lightmode-text);
         padding: 0.25rem 0.5rem;
@@ -134,7 +134,7 @@ textarea:focus {
     border: 2px solid hsl(40, 100%, 80%);
 }
 
-.verzend {
+.submit-button {
     background: var(--primary-color-dark);
     color: white;
     padding: 15px 40px;

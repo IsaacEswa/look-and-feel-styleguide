@@ -16,9 +16,10 @@
   --secondary-color-darkmode: hsl(42, 100%, 30%, .5);
   --achtergrondkleur-darkmode: hsl(137, 37%, 69%);
   --primary-color-lightest:	hsl(137, 54%, 81%);
+  --input-color: hsl(0, 0%, 80%);
   --lightmode-text: hsl(0, 0%, 0%);
   --darkmode-text: hsl(0, 0%, 100%);
-  --lees-meer-link-radius: 0.25rem;
+  --button-radius: 0.25rem;
 }
 
 body {
@@ -96,43 +97,37 @@ p, a, li {
 
 .color1 {
   background-color: var(--primary-color-dark);
-  color: var(--witte-tekst);
+  color: var(--darkmode-text);
   font-weight: bold;
 }
 
 .color2 {
-  background-color: var(--secondary-color-darkmode);
-  color: var(--witte-tekst);
+  background-color: var(--primary-color-light);
+  color: var(--lightmode-text);
   font-weight: bold;
 }
 
 .color3 {
-  background-color: var(--link-achtergrondkleur-lightmode);
-  color: var(--zwarte-tekst);
+  background-color: var(--primary-color-lightest);
+  color: var(--lightmode-text);
   font-weight: bold;
 }
 
 .color4 {
   background-color: var(--secondary-color);
-  color: var(--zwarte-tekst);
+  color: var(--lightmode-text);
   font-weight: bold;
 }
 
 .color5 {
-  background-color: var(--achtergrondkleur-darkmode);
-  color: var(--zwarte-tekst);
+  background-color: var(--secondary-color-darkmode);
+  color: var(--lightmode-text);
   font-weight: bold;
 }
 
 .color6 {
-  background-color: var(--accentkleur-darkmode);
-  color: var(--zwarte-tekst);
-  font-weight: bold;
-}
-
-.color7 {
-  background-color: var(--link-achtergrondkleur-darkmode);
-  color: var(--zwarte-tekst);
+  background-color: var(--input-color);
+  color: var(--lightmode-text);
   font-weight: bold;
 }
 
@@ -140,13 +135,13 @@ p, a, li {
   background-color: var(--lightmode-text);
   color: var(--darkmode-text);
   font-weight: bold;
-  border: 1px solid black;
 }
 
 .color9 {
   background-color: var(--darkmode-text);
   color: var(--lightmode-text);
   font-weight: bold;
+  border: 1px solid black;
 }
 
 .kleurnaam {
@@ -248,27 +243,27 @@ p, a, li {
   line-height: 1.4;
 }
 
-.leesmeer-lightmode {
+.button-lightmode {
   background-color: var(--link-achtergrondkleur-lightmode);
-  color: var(--zwarte-tekst);
+  color: var(--lightmode-text);
   padding: 0.25rem 0.5rem;
-  border-radius: var(--leesMeerLinkRadius);
+  border-radius: var(--button-radius);
   text-decoration: none;
 }
 
-.leesmeer-lightmode:hover {
+.button-lightmode:hover {
   background-color: var(--hover);
 }
 
-.leesmeer-darkmode {
+.button-darkmode {
   background-color: var(--link-achtergrondkleur-darkmode);
-  color: var(--zwarte-tekst);
+  color: var(--lightmode-text);
   padding: 0.25rem 0.5rem;
-  border-radius: var(--leesMeerLinkRadius);
+  border-radius: var(--button-radius);
   text-decoration: none;
 }
 
-.leesmeer-darkmode:hover {
+.button-darkmode:hover {
   background-color: var(--hover);
 }
 
